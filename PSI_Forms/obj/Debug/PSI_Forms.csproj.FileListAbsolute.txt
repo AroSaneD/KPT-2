@@ -1,0 +1,72 @@
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.exe
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.exe
+C:\Users\Paulina\Source\Repos\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.exe
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.exe
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\bin\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+C:\Users\Paulina\Desktop\Git_Rep\KPT-2.0\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewL.resources
+I:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.exe
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.pdb
+I:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe
+I:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.pdb
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewL.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+I:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+I:\PSI_Forms - Copy\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.exe
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.pdb
+I:\PSI_Forms - Copy\PSI_Forms\bin\Debug\PSI_Forms.exe
+I:\PSI_Forms - Copy\PSI_Forms\bin\Debug\PSI_Forms.pdb
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewsList.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+I:\PSI_Forms - Copy\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.exe
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.pdb
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewsList.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.InputBox.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Profile.resources
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Stages.resources
