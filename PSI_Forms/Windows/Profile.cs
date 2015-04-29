@@ -19,6 +19,7 @@ namespace PSI_Forms.Windows
 
 		private void okBtn_Click(object sender, EventArgs e)
 		{
+			this.WindowState = FormWindowState.Normal;
 			this.Dispose();
 		}
 

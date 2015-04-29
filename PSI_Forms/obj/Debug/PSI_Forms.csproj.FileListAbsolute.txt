@@ -60,7 +60,6 @@ C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.pdb
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
-C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddNew.resources
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
@@ -70,3 +69,19 @@ C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csproj.Generate
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.InputBox.resources
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Profile.resources
 C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Stages.resources
+D:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe.config
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.exe
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.pdb
+D:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.exe
+D:\PSI_Forms\PSI_Forms\bin\Debug\PSI_Forms.pdb
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csprojResolveAssemblyReference.cache
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AddWorkers.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.InputBox.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Login.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.MDIMain.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Properties.Resources.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Profile.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Stages.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewsList.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
+D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache

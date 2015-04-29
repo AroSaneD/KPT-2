@@ -57,6 +57,7 @@ namespace PSI_Forms.Windows
 					textBox3.Visible = false;
 					label4.Text = "Deadline";
 					label5.Text = "Team";
+					comboBox1.Items.Clear();
 
 					winName(menuChoice);
 					break;

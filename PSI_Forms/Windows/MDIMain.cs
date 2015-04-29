@@ -27,7 +27,6 @@ namespace PSI_Forms
 			loginCForm.MdiParent = this;
 			loginCForm.StartPosition = FormStartPosition.CenterScreen;
 			//loginCForm.Show();
-
 		}
 
 		#region Default MenuStrip functions
@@ -250,7 +249,7 @@ namespace PSI_Forms
 		{
 			Profile profile = new Profile();
 			profile.MdiParent = this;
-			//profile.WindowState = FormWindowState.Maximized;		// kinda looks good maximized; dont let max other wins
+			profile.WindowState = FormWindowState.Maximized;		// kinda looks good maximized; dont let max other wins
 			profile.Show();
 		}
 

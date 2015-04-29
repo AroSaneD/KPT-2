@@ -13,6 +13,7 @@ namespace PSI_Forms.Windows
 	public partial class Login : Form
 	{
 		private int failCounter = 0;
+		private string role;
 
 		public Login()
 		{
@@ -23,14 +24,14 @@ namespace PSI_Forms.Windows
 		{
 			// check correct login
 			if (textBoxName.Text == "a" && textBoxPass.Text == "a") {
-				MessageBox.Show("Succes", "Logging in...");
+				MessageBox.Show("Success", "Logging in...");
 				this.Dispose();
 			}
 			else {
 				failCounter++;
 				if (failCounter > 4)
 					MessageBox.Show("STOP IT!!!", "Logging in...");
-
+					
 					// do smth more
 
 				else
@@ -40,5 +41,10 @@ namespace PSI_Forms.Windows
 			return; //role
 		}
 
+		private string Role
+		{
+			get { return role; }
+			set { role = value; }
+		}
 	}
 }

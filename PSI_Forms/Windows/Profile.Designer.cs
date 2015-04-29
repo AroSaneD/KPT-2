@@ -38,6 +38,7 @@
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.editBtn = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
@@ -173,6 +173,17 @@
 			this.label2.TabIndex = 10;
 			this.label2.Text = "Surname";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = global::PSI_Forms.Properties.Resources.users;
+			this.pictureBox1.Enabled = false;
+			this.pictureBox1.Location = new System.Drawing.Point(25, 39);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+			this.pictureBox1.TabIndex = 9;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			// 
 			// textBox4
 			// 
 			this.textBox4.Enabled = false;
@@ -242,17 +253,6 @@
 			this.editBtn.Text = "Edit";
 			this.editBtn.UseVisualStyleBackColor = true;
 			this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImage = global::PSI_Forms.Properties.Resources.users;
-			this.pictureBox1.Enabled = false;
-			this.pictureBox1.Location = new System.Drawing.Point(25, 39);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-			this.pictureBox1.TabIndex = 9;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// Profile
 			// 
