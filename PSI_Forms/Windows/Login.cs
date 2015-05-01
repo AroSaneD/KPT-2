@@ -22,7 +22,7 @@ namespace PSI_Forms.Windows
 
 		private void loginBtn_Click(object sender, EventArgs e)
 		{
-			// check correct login
+			// check correct login, most likely need loop
 			if (textBoxName.Text == "a" && textBoxPass.Text == "a") {
 				MessageBox.Show("Success", "Logging in...");
 				this.Dispose();
@@ -31,7 +31,8 @@ namespace PSI_Forms.Windows
 				failCounter++;
 				if (failCounter > 4)
 					MessageBox.Show("STOP IT!!!", "Logging in...");
-					
+					// suspend acc
+
 					// do smth more
 
 				else
