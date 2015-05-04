@@ -1,0 +1,25 @@
+1. Pasalinti visus metodu skliaustus
+2. Any_Day_Events neturi antrojo lango pavadinimo bei visu veiksmu pavadinimu
+3. Profile_Edit klaidos 
+	a) truksta vartotojo duomenu ivedimo
+	b) vartotojo duomenys issaugomi iskart paveiksliuka pasirinkus
+4. Pasalinti visas "Uzklausas". Vietoj ju nurodoma ka padaryti.
+4.1. Visu uzklausu atsakymus irgi pasalinti
+
+5. Task create klaios:
+	Kol kas pataisiau
+6. Team create: -_-
+	1. Sukurti mygtukas turi buti spaudziamas po to kai ivedama informacija, o ne pries ja vedant
+	2. Niekur nera sukuriama komandos esybe. Dabar rodo, jog langas pats i save issaugo duomenis
+	3. Kodel langas uzdaro vartotoja? :DDD
+	4. Salyginiai ivykiai negali pasibaigti ir darbas toliau eiti. Salyginiai atvejai turi uzsibaigti kartu su diagrama.
+	5. Opt langas turi but pries duomenu patikrinima
+	6. Komandos kurimo langas uzdaromas sekmingu duomenu issaugojimu
+	7. "Pridedamas vartotojas"
+	8. Langas vartotojUJE paryskina klaidas
+	9. Informacija pradedama tikrinti pridejus programuotojus, o ne kuriant komanda
+	10. fuck this shit, per nauja reikes cj daryti
+	
+7. Team_Edit klaidos: look at Team_Create
+8. User_Create: look at 4.
+
