@@ -23,11 +23,11 @@
 	10. fuck this shit, per nauja reikes cj daryti  (pats tada cj n darysi)
 	
 7. Team_Edit klaidos: look at Team_Create
-8. User_Create: look at 4.
++8. User_Create: look at 4.
 
 
 2015-05-04 | 22:58
 
-1. any_day_event: veltui nurodoma kas ir kam ka daro
-2. visur: prasta zodziu forma - Pvz. "Spaudziama ..." turetu buti "Spaudzia ..."
++1. any_day_event: veltui nurodoma kas ir kam ka daro
++/-2. visur: prasta zodziu forma - Pvz. "Spaudziama ..." turetu buti "Spaudzia ..."
 ? 3. Lygtai destytojas sake kad negalima if'a ikist vidury ir po juo testi programos veikla nesvarbu nuo to kas ivyko, bet dar paklaust reiks.
