@@ -1,3 +1,5 @@
+2015-05-04 | 10:30
+
 +1. Pasalinti visus metodu skliaustus
 +2. Any_Day_Events neturi antrojo lango pavadinimo bei visu veiksmu pavadinimu
 3. Profile_Edit klaidos 
@@ -23,3 +25,9 @@
 7. Team_Edit klaidos: look at Team_Create
 8. User_Create: look at 4.
 
+
+2015-05-04 | 22:58
+
+1. any_day_event: veltui nurodoma kas ir kam ka daro
+2. visur: prasta zodziu forma - Pvz. "Spaudziama ..." turetu buti "Spaudzia ..."
+? 3. Lygtai destytojas sake kad negalima if'a ikist vidury ir po juo testi programos veikla nesvarbu nuo to kas ivyko, bet dar paklaust reiks.
