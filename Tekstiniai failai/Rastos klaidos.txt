@@ -1,8 +1,8 @@
 +1. Pasalinti visus metodu skliaustus
 +2. Any_Day_Events neturi antrojo lango pavadinimo bei visu veiksmu pavadinimu
 3. Profile_Edit klaidos 
-	a) truksta vartotojo duomenu ivedimo
-	b) vartotojo duomenys issaugomi iskart paveiksliuka pasirinkus
+	+a) truksta vartotojo duomenu ivedimo
+	+b) vartotojo duomenys issaugomi iskart paveiksliuka pasirinkus
 +4. Pasalinti visas "Uzklausas". Vietoj ju nurodoma ka padaryti.
 +4.1. Visu uzklausu atsakymus irgi pasalinti
 
