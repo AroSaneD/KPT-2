@@ -15,6 +15,7 @@ namespace PSI_Forms.Windows
 		public AddWorkers()
 		{
 			InitializeComponent();
+			checkedListBox_Load();
 			this.Name = "Add Workers";
 		}
 
@@ -23,10 +24,29 @@ namespace PSI_Forms.Windows
 			this.Dispose();
 		}
 
-		private void saveBtn_Click(object sender, EventArgs e)
+		private void OKBtn_Click(object sender, EventArgs e)
 		{
 			// save
 			this.Dispose();
+		}
+
+		private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			// Get selected index, and then make sure it is valid.
+			int selected = checkedListBox1.SelectedIndex;
+			if (selected != -1)
+			{
+				this.Text = checkedListBox1.Items[selected].ToString();
+			}
+		}
+
+		private void checkedListBox_Load()
+		{
+			/*for ()
+			{
+				var items = checkedListBox1.Items;
+				items.Add();
+			}*/
 		}
 	}
 }

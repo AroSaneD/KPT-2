@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.cancelBtn = new System.Windows.Forms.Button();
-			this.saveBtn = new System.Windows.Forms.Button();
+			this.okBtn = new System.Windows.Forms.Button();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
 			this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -49,16 +49,16 @@
 			this.cancelBtn.UseVisualStyleBackColor = true;
 			this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
 			// 
-			// saveBtn
+			// okBtn
 			// 
-			this.saveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.saveBtn.Location = new System.Drawing.Point(124, 16);
-			this.saveBtn.Name = "saveBtn";
-			this.saveBtn.Size = new System.Drawing.Size(75, 23);
-			this.saveBtn.TabIndex = 2;
-			this.saveBtn.Text = "Save";
-			this.saveBtn.UseVisualStyleBackColor = true;
-			this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+			this.okBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.okBtn.Location = new System.Drawing.Point(124, 16);
+			this.okBtn.Name = "okBtn";
+			this.okBtn.Size = new System.Drawing.Size(75, 23);
+			this.okBtn.TabIndex = 2;
+			this.okBtn.Text = "OK";
+			this.okBtn.UseVisualStyleBackColor = true;
+			this.okBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
 			// splitContainer1
 			// 
@@ -76,7 +76,7 @@
 			// splitContainer1.Panel2
 			// 
 			this.splitContainer1.Panel2.Controls.Add(this.cancelBtn);
-			this.splitContainer1.Panel2.Controls.Add(this.saveBtn);
+			this.splitContainer1.Panel2.Controls.Add(this.okBtn);
 			this.splitContainer1.Size = new System.Drawing.Size(283, 249);
 			this.splitContainer1.SplitterDistance = 203;
 			this.splitContainer1.TabIndex = 3;
@@ -91,6 +91,7 @@
 			this.checkedListBox1.Name = "checkedListBox1";
 			this.checkedListBox1.Size = new System.Drawing.Size(269, 154);
 			this.checkedListBox1.TabIndex = 0;
+			this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
 			// 
 			// AddWorkers
 			// 
@@ -111,7 +112,7 @@
 		#endregion
 
 		private System.Windows.Forms.Button cancelBtn;
-		private System.Windows.Forms.Button saveBtn;
+		private System.Windows.Forms.Button okBtn;
 		private System.Windows.Forms.SplitContainer splitContainer1;
 		private System.Windows.Forms.CheckedListBox checkedListBox1;
 	}

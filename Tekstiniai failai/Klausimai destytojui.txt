@@ -1,0 +1,2 @@
+Jei turima omeny kartoti procesa per nauja, ar sukurti atskira uzduoti ir nurodyti, kad kartoti?
+Uzduotis turi etapus? Ar sukurus etapa reikia ji nurodyti uzduociai?
