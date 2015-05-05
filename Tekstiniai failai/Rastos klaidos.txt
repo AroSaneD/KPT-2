@@ -31,3 +31,37 @@
 +1. any_day_event: veltui nurodoma kas ir kam ka daro
 +/-2. visur: prasta zodziu forma - Pvz. "Spaudziama ..." turetu buti "Spaudzia ..."
 ? 3. Lygtai destytojas sake kad negalima if'a ikist vidury ir po juo testi programos veikla nesvarbu nuo to kas ivyko, bet dar paklaust reiks.
+
+
+2015-05-05 | 19:44
+
+1. 	Project_Create: 
+		Empty
+2. 	Sticky_Notes: 
+		Priminkit man, kad su domantu pakalbeciau
+		Nereikia nurodyti pavadinima lango kuri atidaro
+		Nebaigta
+3. 	Task_Create:
+		Isliko "Spaudziamas, atidaromas, ..." sintakse
+		Nereikia nurodyti pavadinima lango kuri atidaro
+4.	Task_Edit:
+		TL;DR
+		Nereikia nurodyti pavadinima lango kuri atidaro
+5. 	Task_Update: 
+		Priminkit man, kad su domantu apie sita pakalbeciau
+		Nereikia nurodyti pavadinima lango kuri atidaro
+		Atrodo nepakeista
+6.	Profile_Edit:
+		Nereikia nurodyti pavadinima lango kuri atidaro
+7. 	Team_Create:
+		Nereikia nurodyti pavadinima lango kuri atidaro
+		Vartotoju pasirinkimo langas turi kreiptis i vartotojo(arba programuotojo, jei tokia yra) esybe, nes turi gauti sarasa galimu darbuotoju
+		Vietoj "Issaugo duomenis", turetu buti "Sukuriama"
+8. 	Team_Edit:
+		Look at 7
+9. User_Create:
+		Nereikia nurodyti pavadinima lango kuri atidaro
+		Nebaigta
+10. User_Edit
+		Look at 9
+		
