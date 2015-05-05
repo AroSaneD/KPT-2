@@ -22,7 +22,7 @@
 	+9. Informacija pradedama tikrinti pridejus programuotojus, o ne kuriant komanda
 	10. fuck this shit, per nauja reikes cj daryti  (pats tada cj n darysi)
 	
-7. Team_Edit klaidos: look at Team_Create
++7. Team_Edit klaidos: look at Team_Create
 +8. User_Create: look at 4.
 
 
