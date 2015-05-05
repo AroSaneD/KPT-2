@@ -44,9 +44,9 @@
 +3. Task_Create:
 		Isliko "Spaudziamas, atidaromas, ..." sintakse
 		Nereikia nurodyti pavadinima lango kuri atidaro
-4.	Task_Edit:
++4.	Task_Edit:
 		TL;DR
-		+Nereikia nurodyti pavadinima lango kuri atidaro
+		Nereikia nurodyti pavadinima lango kuri atidaro
 *5. 	Task_Update: 
 		*Priminkit man, kad su domantu apie sita pakalbeciau
 		+Nereikia nurodyti pavadinima lango kuri atidaro
@@ -57,9 +57,9 @@
 		Nereikia nurodyti pavadinima lango kuri atidaro
 		Vartotoju pasirinkimo langas turi kreiptis i vartotojo(arba programuotojo, jei tokia yra) esybe, nes turi gauti sarasa galimu darbuotoju
 		Vietoj "Issaugo duomenis", turetu buti "Sukuriama"
-+8. 	Team_Edit:
++8. Team_Edit:
 		Look at 7
-9. User_Create:
+9.	User_Create:
 		+Nereikia nurodyti pavadinima lango kuri atidaro
 		Nebaigta
 +10. User_Edit
