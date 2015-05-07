@@ -1,0 +1,8 @@
+2015-05-07
+
+Uþduotis: Prisijungti prie sistemos
+Klaida: Destytojas sake, kad blogai padarem nenurodydami kaip programa patikrina ar nera interneto. 
+Prie uzduoties teksto pridejau patikrinima, reikia pakeisti diagramas.
+Resolved?: No
+
+End
