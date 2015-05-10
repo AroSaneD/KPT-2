@@ -1,0 +1,7 @@
+Uþduotys, kuriø pakeista dokumentacija:
+	Sukurti komandà
+	
+	
+Svarstoma redaguoti:
+	Redaguoti komanda - reikia nurodyti, kad programa nelygintu "Pakeista" pavadinima su dabartiniu sios komandos pavadinimu.
+	
