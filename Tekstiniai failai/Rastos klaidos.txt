@@ -67,15 +67,14 @@
 		
 		
 2015-05-11 12:12
-1.	Paveikseliai be antrasciu, tik su numeriais. Pagal metodika taip apskritai negali buti.
++1.	Paveikseliai be antrasciu, tik su numeriais. Pagal metodika taip apskritai negali buti.
 2.	Niekur nenurodyta kas vyksta atidarius pagrindini langa.
-3.	Reikia papildyti susitikimu, ivykiu ir zinuciu siuntima, kad pridejus ivyki/issiuntus zinute, gaunanciojo asmens pagrindinis langas atnaujinamas 
-	sia informacija.
-4. 	No loligagin
++/-3.	Reikia papildyti susitikimu, ivykiu ir zinuciu siuntima, kad pridejus ivyki/issiuntus zinute, gaunanciojo asmens pagrindinis langas atnaujinamas sia informacija.
++/-4. 	No loligagin
 
 	
 Destytojo pastabos:
-  * Paveikslėliai be numerių ir be antraščių
++  * Paveikslėliai be numerių ir be antraščių
   * Dalykinės srities paketų diagrama turi per daug įgyvendinimo detalių.
   * Liko esybių be atributų, trūksta esybių, pvz profilis.
   * Architektūra labai paviršutiniška, be aprašymo.
