@@ -14,16 +14,30 @@ namespace PSI_Forms.Windows
 	{
 		private int failCounter = 0;
 		private string role;
+		private static InputBoxResult _outputResponse = new InputBoxResult();
+
+		public class InputBoxResult
+		{
+			public DialogResult ReturnCode;
+			public string Text;
+		}
 
 		public Login()
 		{
 			InitializeComponent();
 		}
 
+		static private InputBoxResult OutputResponse
+		{
+			get { return _outputResponse; }
+			set { _outputResponse = value; }
+		}
+
 		private void loginBtn_Click(object sender, EventArgs e)
 		{
 			// check correct login, most likely need loop
 			if (textBoxName.Text == "a" && textBoxPass.Text == "a") {
+				//OutputResponse.Text = role;	// return role
 				MessageBox.Show("Success", "Logging in...");
 				this.Dispose();
 			}
@@ -39,13 +53,13 @@ namespace PSI_Forms.Windows
 					MessageBox.Show("Fail", "Logging in...");
 			}
 
-			return; //role
+			return;
 		}
 
-		private string Role
+		/*private string Role
 		{
 			get { return role; }
 			set { role = value; }
-		}
+		}*/
 	}
 }
