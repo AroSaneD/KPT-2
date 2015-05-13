@@ -78,6 +78,6 @@ Destytojo pastabos:
   * Dalykinės srities paketų diagrama turi per daug įgyvendinimo detalių.
   * Liko esybių be atributų, trūksta esybių, pvz profilis.
   * Architektūra labai paviršutiniška, be aprašymo.
-  * Trūksta nuorodų į esybes, pvz diagrama 15, 18, 20, 13 ir t.t.
++  * Trūksta nuorodų į esybes, pvz diagrama 15, 18, 20, 13 ir t.t.
   * Daug kur referuojama, kad ta informacija užkraunama apidarant pagrindinį langą. Bet kur aprašytas pagrindinio lango atidarymas?
   * Robastiškumo diagramose lenda techninės detalės, pvz, kad etapai imami iš DB. Be to ir tekstas čia nesutampa su diagrama.
