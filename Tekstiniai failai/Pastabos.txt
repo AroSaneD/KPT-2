@@ -5,3 +5,10 @@ Uþduotys, kuriø pakeista dokumentacija:
 Svarstoma redaguoti:
 	Redaguoti komanda - reikia nurodyti, kad programa nelygintu "Pakeista" pavadinima su dabartiniu sios komandos pavadinimu.
 	
+	
+Skubiai baigti:
+	Sticky notes (diagrama)
+	Parasyti komandai (diagrama + dokumentacija): langas kreipiasi i komanda ir tada komanda visiem savo vartotojams perduoda zinute.
+	Testavimuose: naudoti tikslia informacija (pvz, vardas: Petras; pass: Petrulis), nebent tai nera svarbu (pvz, koki nors is saraso vartotoja).
+	
+	
