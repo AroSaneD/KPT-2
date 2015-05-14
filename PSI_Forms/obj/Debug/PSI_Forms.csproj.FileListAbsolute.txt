@@ -85,3 +85,4 @@ D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.Stages.resources
 D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewsList.resources
 D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.ViewList.resources
 D:\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.csproj.GenerateResource.Cache
+C:\Users\Paulina\Desktop\PSI_Forms\PSI_Forms\obj\Debug\PSI_Forms.Windows.AboutBox.resources

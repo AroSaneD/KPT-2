@@ -174,9 +174,9 @@ namespace PSI_Forms
 
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			string name = " [ENTER NAME]";		// !!! make bigger font
-			MessageBox.Show(" Copyright © 2015\r\n Produced by [ENTER NAMES] \r\n" + name +
-							"\r\n Version 1.0", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			AboutBox about = new AboutBox();
+			about.MdiParent = this;
+			about.Show();
 		}
 		#endregion
 
