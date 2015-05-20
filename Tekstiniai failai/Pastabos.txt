@@ -1,5 +1,4 @@
 Uþduotys, kuriø pakeista dokumentacija:
-	Sukurti komandà
 	Redaguoti vartotoja (i am veri disssapoint at whoever made dis)
 	Redaguoti profili. 	(i am still dissapoint)
 	Sukurti komanda. 	(either paulinos drive is outdated, or i am veri dissapoint)
@@ -7,13 +6,13 @@ Uþduotys, kuriø pakeista dokumentacija:
 	
 	
 Svarstoma redaguoti:
-	Redaguoti komanda - reikia nurodyti, kad programa nelygintu "Pakeista" pavadinima su dabartiniu sios komandos pavadinimu.
-	Sticky notes 	  - reikia pagalvoti ar tikrai norime, jog spausdintu 2 kartus paspaudus ant etapo... Ir apskritai atrodo jam kazko truksta.
++	Redaguoti komanda - reikia nurodyti, kad programa nelygintu "Pakeista" pavadinima su dabartiniu sios komandos pavadinimu.
+-	Sticky notes 	  - reikia pagalvoti ar tikrai norime, jog spausdintu 2 kartus paspaudus ant etapo... Ir apskritai atrodo jam kazko truksta.
 	
 	
 Skubiai baigti:
 	Sticky notes (diagrama)
-	Parasyti komandai (diagrama + dokumentacija): langas kreipiasi i komanda ir tada komanda visiem savo vartotojams perduoda zinute.
-	Testavimuose: naudoti tikslia informacija (pvz, vardas: Petras; pass: Petrulis), nebent tai nera svarbu (pvz, koki nors is saraso vartotoja).
++	Parasyti komandai (diagrama + dokumentacija): langas kreipiasi i komanda ir tada komanda visiem savo vartotojams perduoda zinute.
++/-	Testavimuose: naudoti tikslia informacija (pvz, vardas: Petras; pass: Petrulis), nebent tai nera svarbu (pvz, koki nors is saraso vartotoja).
 	
 Viskam. Nereikia niekur tikrinti vartotojo pareigu - tai bus atlikta tik kai uzkraunamas pagrindinis langas.
