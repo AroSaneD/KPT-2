@@ -4,7 +4,6 @@ Uþduotys, kuriø pakeista dokumentacija:
 	Sukurti komanda. 	(either paulinos drive is outdated, or i am veri dissapoint)
 	Parasyti zinute. 	(reikia patikrinti ar zinute pavyko issiusti)
 	
-	
 Svarstoma redaguoti:
 +	Redaguoti komanda - reikia nurodyti, kad programa nelygintu "Pakeista" pavadinima su dabartiniu sios komandos pavadinimu.
 -	Sticky notes 	  - reikia pagalvoti ar tikrai norime, jog spausdintu 2 kartus paspaudus ant etapo... Ir apskritai atrodo jam kazko truksta.
