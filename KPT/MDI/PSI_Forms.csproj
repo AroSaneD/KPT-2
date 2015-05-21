@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CF11770-9C6C-42B3-9AB2-96FE30607EC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PSI_Forms</RootNamespace>
+    <AssemblyName>PSI_Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GitSharp">
+      <HintPath>..\..\New folder\Client\packages\GitSharp.0.3\lib\GitSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GitSharp.Core">
+      <HintPath>..\..\New folder\Client\packages\GitSharp.0.3\lib\GitSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\C#\Uzrasu sistema\Uzrasu sistema\bin\Debug\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Octokit">
+      <HintPath>..\..\New folder\Client\packages\Octokit.0.7.3\lib\net45\Octokit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\New folder\Client\packages\System.Web.Http.4.0.0\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\GitController.cs" />
+    <Compile Include="Controller\HttpHelper.cs" />
+    <Compile Include="Controller\NotesController.cs" />
+    <Compile Include="DataTrasnferObjects\ClientDto.cs" />
+    <Compile Include="DataTrasnferObjects\CommitDto.cs" />
+    <Compile Include="DataTrasnferObjects\MilestoneDto.cs" />
+    <Compile Include="DataTrasnferObjects\ProjectDto.cs" />
+    <Compile Include="DataTrasnferObjects\ProjectStatusDto.cs" />
+    <Compile Include="DataTrasnferObjects\RoleDto.cs" />
+    <Compile Include="DataTrasnferObjects\TaskDto.cs" />
+    <Compile Include="DataTrasnferObjects\TaskLogDto.cs" />
+    <Compile Include="DataTrasnferObjects\TaskPriorityDto.cs" />
+    <Compile Include="DataTrasnferObjects\TaskStatus.cs" />
+    <Compile Include="DataTrasnferObjects\TeamDto.cs" />
+    <Compile Include="DataTrasnferObjects\UserDto.cs" />
+    <Compile Include="Internet.cs" />
+    <Compile Include="MyWindows\ProjectNewEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWindows\ProjectNewEdit.Designer.cs">
+      <DependentUpon>ProjectNewEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWindows\TaskNewEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWindows\TaskNewEdit.Designer.cs">
+      <DependentUpon>TaskNewEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWindows\TaskPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWindows\TaskPreview.Designer.cs">
+      <DependentUpon>TaskPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWindows\Tasks.cs" />
+    <Compile Include="MyWindows\Users.cs" />
+    <Compile Include="Resources\Resources.Designer.cs" />
+    <Compile Include="Resources\Settings.Designer.cs" />
+    <Compile Include="Windows\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AddWorkers.Designer.cs">
+      <DependentUpon>AddWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ChatSystem.cs" />
+    <Compile Include="Windows\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MDIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\MDIMain.Designer.cs">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\newMilestone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\newMilestone.Designer.cs">
+      <DependentUpon>newMilestone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWindows\ProjectPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWindows\ProjectPreview.Designer.cs">
+      <DependentUpon>ProjectPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\StagesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\StagesList.Designer.cs">
+      <DependentUpon>StagesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ViewsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\ViewsList.Designer.cs">
+      <DependentUpon>ViewsList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyWindows\ProjectNewEdit.resx">
+      <DependentUpon>ProjectNewEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWindows\ProjectPreview.resx">
+      <DependentUpon>ProjectPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWindows\TaskNewEdit.resx">
+      <DependentUpon>TaskNewEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWindows\TaskPreview.resx">
+      <DependentUpon>TaskPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\AddWorkers.resx">
+      <DependentUpon>AddWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\inputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\MDIMain.resx">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Windows\newMilestone.resx">
+      <DependentUpon>newMilestone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\StagesList.resx">
+      <DependentUpon>StagesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\ViewsList.resx">
+      <DependentUpon>ViewsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

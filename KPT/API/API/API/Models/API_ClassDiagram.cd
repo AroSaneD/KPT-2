@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="API.AppStart.Program">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAA=</HashCode>
+      <FileName>AppStart\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.AppStart.Startup">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>AppStart\Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.ClientMapper">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\ClientMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.CommitMapper">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\CommitMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.MilestoneMapper">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\MilestoneMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.ProjectMapper">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\ProjectMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.ProjectStatusMapper">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\ProjectStatusMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.RoleMapper">
+    <Position X="16.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\RoleMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.TaskLogMapper">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\TaskLogMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.TaskMapper">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\TaskMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.TaskPriorityMapper">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\TaskPriorityMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.TaskStatusMapper">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\TaskStatusMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.TeamMapper">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\TeamMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.BusinessLogic.Mappers.UserMapper">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\Mappers\UserMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.ClientController">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\ClientController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.CommitController">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\CommitController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.MilestoneController">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\MilestoneController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.ProjectController">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\ProjectController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.ProjectStatusController">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\ProjectStatusController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.RoleController">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\RoleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.TaskController">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\TaskController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.TaskLogController">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\TaskLogController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.TaskPriorityController">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\TaskPriorityController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.TaskStatusController">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\TaskStatusController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.TeamController">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\TeamController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Controllers.UserController">
+    <Position X="17.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAEAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Controllers\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.ClientDto">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\ClientDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.CommitDto">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAgAAEAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\CommitDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.MilestoneDto">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQgBAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\MilestoneDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.ProjectDto">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAgAAAAAQAABACAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\ProjectDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.ProjectStatusDto">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\ProjectStatusDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.RoleDto">
+    <Position X="21.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\RoleDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.TaskDto">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAgAAgAAAABAAQwBABCAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>DataTransferObjects\TaskDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.TaskLogDto">
+    <Position X="18.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAACAAggAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\TaskLogDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.TaskPriorityDto">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\TaskPriorityDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.TaskStatusDto">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\TaskStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.TeamDto">
+    <Position X="18" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\TeamDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.DataTransferObjects.UserDto">
+    <Position X="11.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAAACAAAAAAAQAAAAACQgAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataTransferObjects\UserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Exceptions.ElementNotFoundException">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ElementNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.MainDBModelContainer">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQhgBAAAAQAABAAIIAAAgAAEAAIACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Database.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Client">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAACAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Commit">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAgAAEAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\Commit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Milestone">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAACAQgAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\Milestone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Project">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAQEAAAAAAAAAAAAAAQAAAACCAAAEECAAAAAAAQ=</HashCode>
+      <FileName>Models\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.ProjectStatus">
+    <Position X="15.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProjectStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Role">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Task">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAICCAAAAAAgAAgAAAAQCAQgAAACAAAAAACAAAQAAAA=</HashCode>
+      <FileName>Models\Task.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.TaskLog">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAACAAgAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\TaskLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.TaskPriority">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TaskPriority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.TaskStatus">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TaskStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.Team">
+    <Position X="18.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAIAAAACAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Models.User">
+    <Position X="6" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAAACAAAAAAAQAAAAAAQgAQAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.ClientRepository">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ClientRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.CommitRepository">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\CommitRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.MilestoneRepository">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\MilestoneRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.ProjectRepository">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ProjectRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.ProjectStatusRepository">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ProjectStatusRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.RoleRepository">
+    <Position X="2" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\RoleRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.TaskLogRepository">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TaskLogRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.TaskPriorityRepository">
+    <Position X="20" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TaskPriorityRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.TaskRepository">
+    <Position X="15.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TaskRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.TaskStatusRepository">
+    <Position X="3.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TaskStatusRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.TeamRepository">
+    <Position X="3.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TeamRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="API.Repositories.UserRepository">
+    <Position X="2" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAEAAAAAAgAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\UserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

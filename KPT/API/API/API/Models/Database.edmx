@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MainDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MainDBModelStoreContainer">
+    <EntitySet Name="ProjectSet" EntityType="MainDBModel.Store.ProjectSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TeamSet" EntityType="MainDBModel.Store.TeamSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSet" EntityType="MainDBModel.Store.UserSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RoleSet" EntityType="MainDBModel.Store.RoleSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProjectStatusSet" EntityType="MainDBModel.Store.ProjectStatusSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MilestoneSet" EntityType="MainDBModel.Store.MilestoneSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientSet" EntityType="MainDBModel.Store.ClientSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaskSet" EntityType="MainDBModel.Store.TaskSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaskStatusSet" EntityType="MainDBModel.Store.TaskStatusSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaskPrioritySet" EntityType="MainDBModel.Store.TaskPrioritySet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CommitSet" EntityType="MainDBModel.Store.CommitSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaskLogSet" EntityType="MainDBModel.Store.TaskLogSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProjectTeam" EntityType="MainDBModel.Store.ProjectTeam" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ProjectTeam_Project" Association="MainDBModel.Store.FK_ProjectTeam_Project">
+      <End Role="Project" EntitySet="ProjectSet" />
+      <End Role="ProjectTeam" EntitySet="ProjectTeam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectTeam_Team" Association="MainDBModel.Store.FK_ProjectTeam_Team">
+      <End Role="Team" EntitySet="TeamSet" />
+      <End Role="ProjectTeam" EntitySet="ProjectTeam" />
+    </AssociationSet>
+    <AssociationSet Name="UserTeam" Association="MainDBModel.Store.UserTeam">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Team" EntitySet="TeamSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProjectStatusProject" Association="MainDBModel.Store.ProjectStatusProject">
+      <End Role="ProjectStatus" EntitySet="ProjectStatusSet" />
+      <End Role="Project" EntitySet="ProjectSet" />
+    </AssociationSet>
+    <AssociationSet Name="MilestoneProject" Association="MainDBModel.Store.MilestoneProject">
+      <End Role="Milestone" EntitySet="MilestoneSet" />
+      <End Role="Project" EntitySet="ProjectSet" />
+    </AssociationSet>
+    <AssociationSet Name="ClientProject" Association="MainDBModel.Store.ClientProject">
+      <End Role="Client" EntitySet="ClientSet" />
+      <End Role="Project" EntitySet="ProjectSet" />
+    </AssociationSet>
+    <AssociationSet Name="ProjectTask" Association="MainDBModel.Store.ProjectTask">
+      <End Role="Project" EntitySet="ProjectSet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+    <AssociationSet Name="MilestoneTask" Association="MainDBModel.Store.MilestoneTask">
+      <End Role="Milestone" EntitySet="MilestoneSet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+    <AssociationSet Name="TaskStatusTask" Association="MainDBModel.Store.TaskStatusTask">
+      <End Role="TaskStatus" EntitySet="TaskStatusSet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+    <AssociationSet Name="TaskPriorityTask" Association="MainDBModel.Store.TaskPriorityTask">
+      <End Role="TaskPriority" EntitySet="TaskPrioritySet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+    <AssociationSet Name="CommitTask" Association="MainDBModel.Store.CommitTask">
+      <End Role="Commit" EntitySet="CommitSet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+    <AssociationSet Name="TaskLogTask" Association="MainDBModel.Store.TaskLogTask">
+      <End Role="TaskLog" EntitySet="TaskLogSet" />
+      <End Role="Task" EntitySet="TaskSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ProjectSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedOn" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Client" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProjectManager" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProjectStatus_Id" Type="int" Nullable="false" />
+    <Property Name="Client1_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TeamLead" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Passkey" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+    <Property Name="LastActivity" Type="datetime" Nullable="false" />
+    <Property Name="Roles" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Task_Id" Type="int" Nullable="true" />
+    <Property Name="Team_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="RoleSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FriendlyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SysRole" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectStatusSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MilestoneSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Project_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Slug" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedOn" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Estimate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EndDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Project_Id" Type="int" Nullable="false" />
+    <Property Name="Milestone_Id" Type="int" Nullable="false" />
+    <Property Name="TaskStatus_Id" Type="int" Nullable="false" />
+    <Property Name="TaskPriority_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskStatusSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskPrioritySet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Order" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CommitSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CommitHash" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CommitDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Task_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskLogSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Event" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EntryDate" Type="datetime" Nullable="false" />
+    <Property Name="Task_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectTeam">
+    <Key>
+      <PropertyRef Name="Project_Id" />
+      <PropertyRef Name="Team_Id" />
+    </Key>
+    <Property Name="Project_Id" Type="int" Nullable="false" />
+    <Property Name="Team_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="UserTeam">
+    <End Role="User" Type="MainDBModel.Store.UserSet" Multiplicity="*" />
+    <End Role="Team" Type="MainDBModel.Store.TeamSet" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Team_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProjectStatusProject">
+    <End Role="ProjectStatus" Type="MainDBModel.Store.ProjectStatusSet" Multiplicity="1" />
+    <End Role="Project" Type="MainDBModel.Store.ProjectSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="ProjectStatus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MilestoneProject">
+    <End Role="Milestone" Type="MainDBModel.Store.MilestoneSet" Multiplicity="*" />
+    <End Role="Project" Type="MainDBModel.Store.ProjectSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Milestone">
+        <PropertyRef Name="Project_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClientProject">
+    <End Role="Client" Type="MainDBModel.Store.ClientSet" Multiplicity="1" />
+    <End Role="Project" Type="MainDBModel.Store.ProjectSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="Client1_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProjectTask">
+    <End Role="Project" Type="MainDBModel.Store.ProjectSet" Multiplicity="1" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Project_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MilestoneTask">
+    <End Role="Milestone" Type="MainDBModel.Store.MilestoneSet" Multiplicity="1" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Milestone">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Milestone_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TaskStatusTask">
+    <End Role="TaskStatus" Type="MainDBModel.Store.TaskStatusSet" Multiplicity="1" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaskStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="TaskStatus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TaskPriorityTask">
+    <End Role="TaskPriority" Type="MainDBModel.Store.TaskPrioritySet" Multiplicity="1" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaskPriority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="TaskPriority_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CommitTask">
+    <End Role="Commit" Type="MainDBModel.Store.CommitSet" Multiplicity="*" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Commit">
+        <PropertyRef Name="Task_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TaskLogTask">
+    <End Role="TaskLog" Type="MainDBModel.Store.TaskLogSet" Multiplicity="*" />
+    <End Role="Task" Type="MainDBModel.Store.TaskSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TaskLog">
+        <PropertyRef Name="Task_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectTeam_Project">
+    <End Role="Project" Type="MainDBModel.Store.ProjectSet" Multiplicity="1" />
+    <End Role="ProjectTeam" Type="MainDBModel.Store.ProjectTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProjectTeam">
+        <PropertyRef Name="Project_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectTeam_Team">
+    <End Role="ProjectTeam" Type="MainDBModel.Store.ProjectTeam" Multiplicity="*" />
+    <End Role="Team" Type="MainDBModel.Store.TeamSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProjectTeam">
+        <PropertyRef Name="Team_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MainDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MainDBModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ProjectSet" EntityType="MainDBModel.Project" />
+          <EntitySet Name="TeamSet" EntityType="MainDBModel.Team" />
+          <EntitySet Name="UserSet" EntityType="MainDBModel.User" />
+          <EntitySet Name="RoleSet" EntityType="MainDBModel.Role" />
+          <AssociationSet Name="ProjectTeam" Association="MainDBModel.ProjectTeam">
+            <End Role="Project" EntitySet="ProjectSet" />
+            <End Role="Team" EntitySet="TeamSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserTeam" Association="MainDBModel.UserTeam">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Team" EntitySet="TeamSet" />
+          </AssociationSet>
+          <EntitySet Name="ProjectStatusSet" EntityType="MainDBModel.ProjectStatus" />
+          <AssociationSet Name="ProjectStatusProject" Association="MainDBModel.ProjectStatusProject">
+            <End Role="ProjectStatus" EntitySet="ProjectStatusSet" />
+            <End Role="Project" EntitySet="ProjectSet" />
+          </AssociationSet>
+          <EntitySet Name="MilestoneSet" EntityType="MainDBModel.Milestone" />
+          <AssociationSet Name="MilestoneProject" Association="MainDBModel.MilestoneProject">
+            <End Role="Milestone" EntitySet="MilestoneSet" />
+            <End Role="Project" EntitySet="ProjectSet" />
+          </AssociationSet>
+          <EntitySet Name="ClientSet" EntityType="MainDBModel.Client" />
+          <AssociationSet Name="ClientProject" Association="MainDBModel.ClientProject">
+            <End Role="Client" EntitySet="ClientSet" />
+            <End Role="Project" EntitySet="ProjectSet" />
+          </AssociationSet>
+          <EntitySet Name="TaskSet" EntityType="MainDBModel.Task" />
+          <AssociationSet Name="ProjectTask" Association="MainDBModel.ProjectTask">
+            <End Role="Project" EntitySet="ProjectSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <AssociationSet Name="MilestoneTask" Association="MainDBModel.MilestoneTask">
+            <End Role="Milestone" EntitySet="MilestoneSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <EntitySet Name="TaskStatusSet" EntityType="MainDBModel.TaskStatus" />
+          <AssociationSet Name="TaskStatusTask" Association="MainDBModel.TaskStatusTask">
+            <End Role="TaskStatus" EntitySet="TaskStatusSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <EntitySet Name="TaskPrioritySet" EntityType="MainDBModel.TaskPriority" />
+          <AssociationSet Name="TaskPriorityTask" Association="MainDBModel.TaskPriorityTask">
+            <End Role="TaskPriority" EntitySet="TaskPrioritySet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <EntitySet Name="CommitSet" EntityType="MainDBModel.Commit" />
+          <AssociationSet Name="CommitTask" Association="MainDBModel.CommitTask">
+            <End Role="Commit" EntitySet="CommitSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <EntitySet Name="TaskLogSet" EntityType="MainDBModel.TaskLog" />
+          <AssociationSet Name="TaskLogTask" Association="MainDBModel.TaskLogTask">
+            <End Role="TaskLog" EntitySet="TaskLogSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOn" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Client" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectManager" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Team" Relationship="MainDBModel.ProjectTeam" FromRole="Project" ToRole="Team" />
+          <NavigationProperty Name="ProjectStatus" Relationship="MainDBModel.ProjectStatusProject" FromRole="Project" ToRole="ProjectStatus" />
+          <NavigationProperty Name="Milestone" Relationship="MainDBModel.MilestoneProject" FromRole="Project" ToRole="Milestone" />
+          <NavigationProperty Name="Client1" Relationship="MainDBModel.ClientProject" FromRole="Project" ToRole="Client" />
+          <NavigationProperty Name="Task" Relationship="MainDBModel.ProjectTask" FromRole="Project" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Team">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TeamLead" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Project" Relationship="MainDBModel.ProjectTeam" FromRole="Team" ToRole="Project" />
+          <NavigationProperty Name="User" Relationship="MainDBModel.UserTeam" FromRole="Team" ToRole="User" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Passkey" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Firstname" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastActivity" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Roles" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Team" Relationship="MainDBModel.UserTeam" FromRole="User" ToRole="Team" />
+          <Property Name="Task_Id" Type="Int32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FriendlyName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SysRole" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ProjectTeam">
+          <End Type="MainDBModel.Project" Role="Project" Multiplicity="*" />
+          <End Type="MainDBModel.Team" Role="Team" Multiplicity="*" />
+        </Association>
+        <Association Name="UserTeam">
+          <End Type="MainDBModel.User" Role="User" Multiplicity="*" />
+          <End Type="MainDBModel.Team" Role="Team" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="ProjectStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ProjectStatusProject">
+          <End Type="MainDBModel.ProjectStatus" Role="ProjectStatus" Multiplicity="1" />
+          <End Type="MainDBModel.Project" Role="Project" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Milestone">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Project" Relationship="MainDBModel.MilestoneProject" FromRole="Milestone" ToRole="Project" />
+          <NavigationProperty Name="Task" Relationship="MainDBModel.MilestoneTask" FromRole="Milestone" ToRole="Task" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="MilestoneProject">
+          <End Type="MainDBModel.Milestone" Role="Milestone" Multiplicity="*" />
+          <End Type="MainDBModel.Project" Role="Project" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Project" Relationship="MainDBModel.ClientProject" FromRole="Client" ToRole="Project" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ClientProject">
+          <End Type="MainDBModel.Client" Role="Client" Multiplicity="1" />
+          <End Type="MainDBModel.Project" Role="Project" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Slug" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOn" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Estimate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="EndDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Project" Relationship="MainDBModel.ProjectTask" FromRole="Task" ToRole="Project" />
+          <NavigationProperty Name="Milestone" Relationship="MainDBModel.MilestoneTask" FromRole="Task" ToRole="Milestone" />
+          <NavigationProperty Name="TaskStatus" Relationship="MainDBModel.TaskStatusTask" FromRole="Task" ToRole="TaskStatus" />
+          <NavigationProperty Name="TaskPriority" Relationship="MainDBModel.TaskPriorityTask" FromRole="Task" ToRole="TaskPriority" />
+          <NavigationProperty Name="TaskLog" Relationship="MainDBModel.TaskLogTask" FromRole="Task" ToRole="TaskLog" />
+        </EntityType>
+        <Association Name="ProjectTask">
+          <End Type="MainDBModel.Project" Role="Project" Multiplicity="1" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="*" />
+        </Association>
+        <Association Name="MilestoneTask">
+          <End Type="MainDBModel.Milestone" Role="Milestone" Multiplicity="1" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="*" />
+        </Association>
+        <EntityType Name="TaskStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="TaskStatusTask">
+          <End Type="MainDBModel.TaskStatus" Role="TaskStatus" Multiplicity="1" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="*" />
+        </Association>
+        <EntityType Name="TaskPriority">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Order" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="TaskPriorityTask">
+          <End Type="MainDBModel.TaskPriority" Role="TaskPriority" Multiplicity="1" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Commit">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Task" Relationship="MainDBModel.CommitTask" FromRole="Commit" ToRole="Task" />
+          <Property Type="String" Name="CommitHash" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Type="DateTime" Name="CommitDateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="CommitTask">
+          <End Type="MainDBModel.Commit" Role="Commit" Multiplicity="*" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="1" />
+        </Association>
+        <EntityType Name="TaskLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Task" Relationship="MainDBModel.TaskLogTask" FromRole="TaskLog" ToRole="Task" />
+          <Property Name="Event" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Type="DateTime" Name="EntryDate" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="TaskLogTask">
+          <End Type="MainDBModel.TaskLog" Role="TaskLog" Multiplicity="*" />
+          <End Type="MainDBModel.Task" Role="Task" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MainDBModelStoreContainer" CdmEntityContainer="MainDBModelContainer">
+    <EntitySetMapping Name="ProjectSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Project)">
+        <MappingFragment StoreEntitySet="ProjectSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Team)">
+        <MappingFragment StoreEntitySet="TeamSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TeamLead" ColumnName="TeamLead" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.User)">
+        <MappingFragment StoreEntitySet="UserSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Passkey" ColumnName="Passkey" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="LastActivity" ColumnName="LastActivity" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="Task_Id" ColumnName="Task_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Role)">
+        <MappingFragment StoreEntitySet="RoleSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+          <ScalarProperty Name="SysRole" ColumnName="SysRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectStatusSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.ProjectStatus)">
+        <MappingFragment StoreEntitySet="ProjectStatusSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MilestoneSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Milestone)">
+        <MappingFragment StoreEntitySet="MilestoneSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Client)">
+        <MappingFragment StoreEntitySet="ClientSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Task)">
+        <MappingFragment StoreEntitySet="TaskSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Slug" ColumnName="Slug" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Estimate" ColumnName="Estimate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskStatusSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.TaskStatus)">
+        <MappingFragment StoreEntitySet="TaskStatusSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskPrioritySet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.TaskPriority)">
+        <MappingFragment StoreEntitySet="TaskPrioritySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommitSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.Commit)">
+        <MappingFragment StoreEntitySet="CommitSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CommitHash" ColumnName="CommitHash" />
+          <ScalarProperty Name="CommitDateTime" ColumnName="CommitDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskLogSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MainDBModel.TaskLog)">
+        <MappingFragment StoreEntitySet="TaskLogSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ProjectTeam" TypeName="MainDBModel.ProjectTeam" StoreEntitySet="ProjectTeam">
+      <EndProperty Name="Project">
+        <ScalarProperty Name="Id" ColumnName="Project_Id" />
+      </EndProperty>
+      <EndProperty Name="Team">
+        <ScalarProperty Name="Id" ColumnName="Team_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserTeam" TypeName="MainDBModel.UserTeam" StoreEntitySet="UserSet">
+      <EndProperty Name="Team">
+        <ScalarProperty Name="Id" ColumnName="Team_Id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Team_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProjectStatusProject" TypeName="MainDBModel.ProjectStatusProject" StoreEntitySet="ProjectSet">
+      <EndProperty Name="ProjectStatus">
+        <ScalarProperty Name="Id" ColumnName="ProjectStatus_Id" />
+      </EndProperty>
+      <EndProperty Name="Project">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MilestoneProject" TypeName="MainDBModel.MilestoneProject" StoreEntitySet="MilestoneSet">
+      <EndProperty Name="Project">
+        <ScalarProperty Name="Id" ColumnName="Project_Id" />
+      </EndProperty>
+      <EndProperty Name="Milestone">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClientProject" TypeName="MainDBModel.ClientProject" StoreEntitySet="ProjectSet">
+      <EndProperty Name="Client">
+        <ScalarProperty Name="Id" ColumnName="Client1_Id" />
+      </EndProperty>
+      <EndProperty Name="Project">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProjectTask" TypeName="MainDBModel.ProjectTask" StoreEntitySet="TaskSet">
+      <EndProperty Name="Project">
+        <ScalarProperty Name="Id" ColumnName="Project_Id" />
+      </EndProperty>
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MilestoneTask" TypeName="MainDBModel.MilestoneTask" StoreEntitySet="TaskSet">
+      <EndProperty Name="Milestone">
+        <ScalarProperty Name="Id" ColumnName="Milestone_Id" />
+      </EndProperty>
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TaskStatusTask" TypeName="MainDBModel.TaskStatusTask" StoreEntitySet="TaskSet">
+      <EndProperty Name="TaskStatus">
+        <ScalarProperty Name="Id" ColumnName="TaskStatus_Id" />
+      </EndProperty>
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TaskPriorityTask" TypeName="MainDBModel.TaskPriorityTask" StoreEntitySet="TaskSet">
+      <EndProperty Name="TaskPriority">
+        <ScalarProperty Name="Id" ColumnName="TaskPriority_Id" />
+      </EndProperty>
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CommitTask" TypeName="MainDBModel.CommitTask" StoreEntitySet="CommitSet">
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Task_Id" />
+      </EndProperty>
+      <EndProperty Name="Commit">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TaskLogTask" TypeName="MainDBModel.TaskLogTask" StoreEntitySet="TaskLogSet">
+      <EndProperty Name="Task">
+        <ScalarProperty Name="Id" ColumnName="Task_Id" />
+      </EndProperty>
+      <EndProperty Name="TaskLog">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="048b6f07b5c44373ab2a44ca752c6f2e" Name="Diagram1">
+        <EntityTypeShape EntityType="MainDBModel.Project" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Team" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.User" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Role" Width="1.5" PointX="6.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.ProjectStatus" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Milestone" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Client" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Task" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.TaskStatus" Width="1.5" PointX="4" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.TaskPriority" Width="1.5" PointX="6.125" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Commit" Width="1.5" PointX="8" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.TaskLog" Width="1.5" PointX="9.875" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="MainDBModel.ProjectTeam" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.UserTeam" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.ProjectStatusProject" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.MilestoneProject" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.ClientProject" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.ProjectTask" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.MilestoneTask" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.TaskStatusTask" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.TaskPriorityTask" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.CommitTask" ManuallyRouted="false" />
+        <AssociationConnector Association="MainDBModel.TaskLogTask" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
